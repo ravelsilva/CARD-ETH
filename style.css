@@ -1,0 +1,158 @@
+/*Front-end Style Guide 
+Layout 
+The designs were created to the following widths: 
+Mobile: 375px
+Desktop: 1440px 
+
+Colors 
+Primary 
+Soft blue: hsl(215, 51%, 70%)
+Cyan: hsl(178, 100%, 50%) 
+
+Neutral 
+Very dark blue (main BG): hsl(217, 54%, 11%)
+Very dark blue (card BG): hsl(216, 50%, 16%)
+Very dark blue (line): hsl(215, 32%, 27%)
+White: hsl(0, 0%, 100%) 
+
+TYPOGRAPHY
+
+Body Copy 
+Font size (paragraph): 18px 
+Font  Family: Outfit
+Weights: 300, 400, 600*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 100%;
+  background-color: hsl(217, 54%, 11%);
+  margin: 0 auto;
+}
+
+.section {
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.planet {
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  width: 305px;
+  border-radius: 20px;
+  box-shadow: 0px 26px 3px 12px rgba(0, 0, 0, 0.063),
+    0px 22px 5px 35px rgba(4, 4, 31, 0.063);
+}
+
+.equilibrium {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 260px;
+  height: 260px;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: 100% auto;
+  position: relative;
+}
+
+.imagemhover {
+  border-radius: 10px;
+  width: 260px;
+  height: 260px;
+  filter: opacity(0.2) drop-shadow(0 0 0 hsl(178, 100%, 50%));
+
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.imagemview {
+  position: absolute;
+  top: 110px;
+  left: 105px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.equilibrium:hover .imagemhover {
+  opacity: 1;
+}
+
+.equilibrium:hover .imagemview {
+  opacity: 1;
+}
+
+.conteudo {
+  display: flex;
+  font-weight: 300;
+  font-size: 14px;
+  flex-direction: column;
+  color: white;
+  padding: 20px 22px;
+  gap: 20px;
+}
+
+.titulo:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.subtitle {
+  color: hsl(215, 51%, 70%);
+}
+
+.down_text {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.ethsec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: hsl(178, 100%, 50%);
+}
+
+.hoursec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+
+.createavatar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid hsl(215, 51%, 70%);
+  padding-top: 16px;
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+}
+
+strong:hover {
+  color: hsl(178, 100%, 50%);
+}
