@@ -34,7 +34,7 @@ Weights: 300, 400, 600*/
 
 body {
   display: flex;
-  width: 100%;
+  max-width: 1440px;
   height: auto;
   font-size: 100%;
   background-color: hsl(217, 54%, 11%);
